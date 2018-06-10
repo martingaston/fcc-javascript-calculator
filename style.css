@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+  background: linear-gradient(to right, #1D2B64, #F8CDDA);
+  display:grid;
+  height: 95%;
+  font-family: Orbitron, sans-serif;
+}
+
+article {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px 0;
+  margin: 8% auto;
+  height: 280px;
+  width: 220px;
+  box-shadow: 18px 18px 31px -12px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-gap: 3px 2px;
+  justify-content: center;
+  margin: auto;
+}
+
+.equal {
+  grid-column-start: 4;
+  grid-row-end: span 2;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+#display {
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  background-color: gray;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+
+button {
+  background-color: silver;
+  border: none;
+  margin: none;
+  padding: none;
+  font-family: Orbitron, sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .35);
+}
+
+button:active {
+  transform: translate(0, 0.7px);
+}
