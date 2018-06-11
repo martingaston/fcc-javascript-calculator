@@ -19,10 +19,11 @@ article {
 }
 
 .container {
-  min-height: 300px;
+  min-height: 100%;
+  width: 90%;
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-gap: 3px 2px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 3px 3px;
   justify-content: center;
   margin: auto;
 }
@@ -46,8 +47,8 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid whitesmoke;
-  border-left: 1px solid whitesmoke;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
 }
 
 button {
@@ -55,10 +56,31 @@ button {
   border: none;
   margin: none;
   padding: none;
+  font-size: 1rem;
   font-family: Orbitron, sans-serif;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .35);
 }
 
 button:active {
   transform: translate(0, 0.7px);
+}
+
+@media (max-width: 600px) {
+  article {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .container {
+    height: 95%;
+    grid-gap: 6px 6px;
+  }
+
+  #display {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
 }
